@@ -1,0 +1,26 @@
+<?php
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+
+<?php /* @var $block \MDL\CustomShipments\Block\Catalog\Product\View\Options\Type\Shipments $block */ ?>
+<?php
+//$_option = $block->getOption();
+//$class = ($_option->getIsRequire()) ? ' required' : '';
+if ($block->hasShippingOptions()):
+?>
+<div class="field required">
+    <label class="label" for="select_shipment_<?php $block->getProduct()->getId()?>">
+        <span><?php echo  __('Select Shipping Method') ?></span>
+    </label>
+    <div class="control">
+        <?php echo $block->getValuesHtml() ?>
+    </div>
+</div>
+
+<?php endif; ?>

@@ -1,0 +1,5 @@
+.action.action-update,
+.action.action-cancel,
+.field.field-select-billing {
+    display: none;
+}

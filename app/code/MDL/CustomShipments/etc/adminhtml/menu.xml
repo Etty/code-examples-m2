@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MDL_CustomShipments::custom_shipments_list" resource="MDL_CustomShipments::custom_shipments_list"
+             title="Custom shipping methods" action="mdl_custom_shipments/index/index" module="MDL_CustomShipments"
+             sortOrder="10" parent="Magento_Sales::sales" dependsOnModule="Magento_Sales"/>
+    </menu>
+</config>

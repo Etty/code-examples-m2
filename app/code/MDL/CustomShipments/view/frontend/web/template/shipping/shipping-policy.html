@@ -1,0 +1,18 @@
+<!-- ko if: config.isEnabled -->
+<div class="field">
+    <div
+            data-bind="mageInit: {'collapsible':{'openedState': 'mdl_customshipments_collapsible_opened'}}"
+            class="mdl_customshipments_shipping_policy_block mdl_customshipments_collapsible_container">
+        <div class="mdl_customshipments_universal_wrapper mdl_customshipments_collapsible_title" data-role="title">
+            <!-- ko i18n: 'See our Shipping Policy' --><!-- /ko -->
+        </div>
+        <div class="mdl_customshipments_universal_wrapper mdl_customshipments_collapsible_content"
+             data-role="content"
+        >
+            <div class="mdl_customshipments_collapsible_content_scrollable" data-bind="html: config.shippingPolicyContent, afterRender: appendScrollbar">
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /ko !-->
